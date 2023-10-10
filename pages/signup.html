@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style1.css">
+    <style>
+        body {
+            background-color: rgba(156, 172, 224, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <label for="university">Select University</label>
-        <select id="university" name="university" id="university" required>
-            <option value="" selected></option>
-            <option value="moi">Moi University</option>
-            <option value="uon">University of Nairobi</option>
-            <option value="ku">Kenyatta University</option>
-            <option value="jkuat">Jomo Kenyatta University of Science and Technology</option>
-            <option value="maseno">Maseno University</option>
-        </select> <br />
-        <br />
-        <label for="studentEmail">Student Email address</label>
-        <input type="email" id="studentEmail" name="studentEmail" required > <br /> <br />
-        <input type="submit" value="Submit">
-    </form>
+    <main>
+        <section class="position-relative py-4 py-xl-5">
+            <div class="container">
+                <div class="row d-flex content-justify-center">
+                    <div class="col-md-6 col-xl-4 m-auto mt-5">
+                        <p class="text-center text-uppercase">Sign up</p>
+                        <p>Already have an account? <span><a href="/index.html">Login</a></span></p>
+                        <div class="card">
+                            <div class="card-body p-5">
+                                
+                                <form>
+                                    <div class="mb-3 mt-3">
+                                    <select  class="form-select">
+                                        <!-- Order from a script in alphabetical order -->
+                                        <!-- Also look for a list of all the universities and colleges in Kenya -->
+                                        <option value="uon">University of Nairobi</option>
+                                        <option value="ku">Kenyatta University</option>
+                                        <option value="jkuat">Jomo Kenyatta university of Science and Technology</option>
+                                        <option value="moi">Moi University</option>
+                                        <option value="egerton">Egerton University</option>
+                                        <option value="maseno">Maseno university</option>
+                                        <option value="masai">Maasai mara university</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="studentEmail" class="form-label">Student Email address</label>
+                                    <input type="email" id="studentEmail" class="form-control" autocomplete="off" name="studentEmail" required >
+                                    </div>
+                                    
+                                    <input type="submit" value="Sign up" class="btn btn-primary">
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+    <script src="/scripts/bootstrap.min.js"></script>
 </body>
 </html>

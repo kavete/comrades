@@ -1,8 +1,4 @@
-#forgot {
-    float: right;
-}
-main {
-    width: 50%;
-    margin:auto;
-    padding: auto;
+.card-body {
+    background-color: rgba(156, 172, 224, 0.6);
+    border-radius: 5px;
 }
